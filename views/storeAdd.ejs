@@ -1,0 +1,58 @@
+<%- include('partials/header', { title: 'Add Store' }) %>
+
+<h1 style="text-align: center; color:darkred">Create New Store</h1>
+
+   <h3>Please filled the form below to add a new store!</h3>
+
+   <div class="container col-xl-6 col-md-6 pb-4">
+      <form action="/stores/add" method="post">
+
+         <div class="form-group my-2">
+            <label for="name">What is the name of your store?</label>
+            <input type="text" name="name" class="form-control" id="name">
+         </div>
+
+         <div class="form-group my-2">
+            <label for="location">Where does your store located?</label>
+            <input type="text" name="location" class="form-control" id="location">
+         </div>
+
+         <div>
+            <p>What kind of store do you want?</p>
+            <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="category" id="category" value="Mart">
+               <label class="form-check-label" for="category">Mart</label>
+            </div>
+            <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="category" id="category" value="Midi">
+               <label class="form-check-label" for="category">Midi</label>
+            </div>
+            <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="category" id="category" value="Express">
+               <label class="form-check-label" for="category">Express</label>
+            </div>
+         </div>
+
+         <div>
+            <button type="submit" class="btn btn-primary">Create</button>
+
+         </div>
+      </form>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include('partials/footer') %>

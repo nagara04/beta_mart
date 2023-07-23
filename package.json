@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0",
+    "sequelize": "^6.30.0",
+    "sequelize-cli": "^6.6.0"
+  },
+  "name": "fsjs-p1-v2-c6-damarnagara04",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10723926&assignment_repo_type=AssignmentRepo)\r # Betamart",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H8-P1-S2/fsjs-p1-v2-c6-DamarNagara04.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H8-P1-S2/fsjs-p1-v2-c6-DamarNagara04/issues"
+  },
+  "homepage": "https://github.com/H8-P1-S2/fsjs-p1-v2-c6-DamarNagara04#readme"
+}

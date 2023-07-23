@@ -1,0 +1,204 @@
+<%- include('partials/header', { title: 'Home' }) %>
+
+
+<h1 style="text-align: center; color:darkred">Betamidi CMS</h1>
+   
+   <div class="container d-flex justify-content-center">
+      <div class="row">
+
+         <div class="col-md-12">
+            <table class="table table-sm">
+               <thead class="table-dark">
+                  <tr>
+                     <th>Name</th>
+                     <th>Code</th>
+                     <th>Location</th>
+                     <th>Category</th>
+                     <th style="text-align: center;">Action</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <% data.forEach(data=> { %>
+                     <tr>
+                        <td>
+                           <%= data.name %>
+                        </td>
+                        <td>
+                           <%= data.code %>
+                        </td>
+                        <td>
+                           <%= data.location %>
+                        </td>
+                        <td>
+                           <%= data.category %>
+                        </td>
+                        <td>
+                           <a href=""><button type="button"
+                                 class="btn btn-success">Details</button></a>
+                        </td>
+                     </tr>
+
+                     <% }) %>
+                     
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+
+
+<!-- <h1 class="" style="text-align: center; color:rgb(255, 255, 255)"><strong>Betamidi CMS</strong></h1>
+      <div class="container ">
+         <div class="row justify-content-center">
+            <div class="col-md-offset-1 col-md-10">
+               <div class="panel">
+                  <div class="panel-heading">
+                     <div class="row">
+                        <div class="col col-sm-3 col-xs-12">
+                           <h4 class="title">Data <span>List</span></h4>
+                        </div>
+                        <div class="col-sm-9 col-xs-12 text-right">
+                           <div class="btn_group justify-content-end">
+                              <input type="text" class="form-control" placeholder="Search">
+                              <button class="btn btn-default" title="search">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                       d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                 </svg>
+                              </button>
+                              <button class="btn btn-default" title="Pdf">
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                       d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                                    <path
+                                       d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+                                 </svg>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="panel-body table-responsive">
+                     <table class="table">
+                        <thead>
+                           <tr>
+                              <th>#</th>
+                              <th>Full Name</th>
+                              <th>Age</th>
+                              <th>Job Title</th>
+                              <th>City</th>
+                              <th>Action</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td>1</td>
+                              <td>Vincent Williamson</td>
+                              <td>31</td>
+                              <td>iOS Developer</td>
+                              <td>Sinaai-Waas</td>
+                              <td>
+                                 <ul class="action-list">
+                                    <li>
+                                       <a href="#" data-tip="edit">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                             <path
+                                                d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                             <path fill-rule="evenodd"
+                                                d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                          </svg>
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="#" data-tip="delete">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                                             <path
+                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                             <path fill-rule="evenodd"
+                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                          </svg>
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>2</td>
+                              <td>Taylor Reyes</td>
+                              <td>22</td>
+                              <td>UI/UX Developer</td>
+                              <td>Baileux</td>
+                              <td>
+                                 <ul class="action-list">
+                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                 </ul>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>3</td>
+                              <td>Justin Block</td>
+                              <td>26</td>
+                              <td>Frontend Developer</td>
+                              <td>Overland Park</td>
+                              <td>
+                                 <ul class="action-list">
+                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                 </ul>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>4</td>
+                              <td>Sean Guzman</td>
+                              <td>26</td>
+                              <td>Web Designer</td>
+                              <td>Gloucester</td>
+                              <td>
+                                 <ul class="action-list">
+                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                 </ul>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>5</td>
+                              <td>Keith Carter</td>
+                              <td>20</td>
+                              <td>Graphic Designer</td>
+                              <td>Oud-Turnhout</td>
+                              <td>
+                                 <ul class="action-list">
+                                    <li><a href="#" data-tip="edit"><i class="fa fa-edit"></i></a></li>
+                                    <li><a href="#" data-tip="delete"><i class="fa fa-trash"></i></a></li>
+                                 </ul>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="panel-footer">
+                     <div class="row">
+                        <div class="col col-sm-6 col-xs-6">showing <b>5</b> out of <b>25</b> entries</div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+
+
+
+ -->
+
+
+
+
+<%- include('partials/footer') %>

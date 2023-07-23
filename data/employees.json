@@ -1,0 +1,92 @@
+[
+   {
+      "id": 1,
+      "firstName": "Darla",
+      "lastName": "Probart",
+      "dateOfBirth": "2015-10-24",
+      "education": "Mountain State University",
+      "position": "CEO",
+      "StoreId": "1"
+   },
+   {
+      "id": 2,
+      "firstName": "Daniele",
+      "lastName": "Ghioni",
+      "dateOfBirth": "1994-01-11",
+      "education": "Wilmington College",
+      "position": "Manager",
+      "StoreId": "1"
+   },
+   {
+      "id": 3,
+      "firstName": "Randolf",
+      "lastName": "Atlay",
+      "dateOfBirth": "2012-05-28",
+      "education": "Universitas Negeri Gorontalo",
+      "position": "Supervisor",
+      "StoreId": "2"
+   },
+   {
+      "id": 4,
+      "firstName": "Roz",
+      "lastName": "Lymer",
+      "dateOfBirth": "2002-03-15",
+      "education": "Marmara University",
+      "position": "Manager",
+      "StoreId": "3"
+   },
+   {
+      "id": 5,
+      "firstName": "Madelaine",
+      "lastName": "Buxsey",
+      "dateOfBirth": "2005-06-23",
+      "education": "Nebraska Wesleyan University",
+      "position": "CEO",
+      "StoreId": "4"
+   },
+   {
+      "id": 6,
+      "firstName": "Hall",
+      "lastName": "Chaunce",
+      "dateOfBirth": "1986-08-26",
+      "education": "Kuban State University of Agriculture",
+      "position": "Manager",
+      "StoreId": "4"
+   },
+   {
+      "id": 7,
+      "firstName": "Micaela",
+      "lastName": "Vasse",
+      "dateOfBirth": "1980-11-13",
+      "education": "Marywood University",
+      "position": "Supervisor",
+      "StoreId": "4"
+   },
+   {
+      "id": 8,
+      "firstName": "Tish",
+      "lastName": "Smithson",
+      "dateOfBirth": "1995-01-03",
+      "education": "Nippon Dental University",
+      "position": "Staff",
+      "StoreId": "4"
+   },
+   {
+      "id": 9,
+      "firstName": "Marlane",
+      "lastName": "Drewitt",
+      "dateOfBirth": "2001-03-06",
+      "education": "University of Ferrara",
+      "position": "Staff",
+      "StoreId": "2"
+   },
+   {
+      "id": 10,
+      "firstName": "Amery",
+      "lastName": "Petett",
+      "dateOfBirth": "1989-01-19",
+      "education": "Gifu Shotoku Gakuen University",
+      "position": "Software Test Engineer III",
+      "StoreId": "1"
+   }
+]
